@@ -14,3 +14,6 @@
  
 ## Curso de Databricks Administrator com Terraform
  * Microsoft Azure Databricks Administration - ETL Workflow: https://www.udemy.com/course/microsoft-azure-databricks-administration-etl-workflow/learn/lecture/35666690#overview
+
+## Curso de CI/CD cim Databricks Asset Bundle
+ * https://www.udemy.com/course/microsoft-azure-databricks-administration-etl-workflow/learn/lecture/35666690#overview
