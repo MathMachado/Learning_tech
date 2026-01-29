@@ -11,3 +11,6 @@
 
 * Formação Completa Apache Airflow 3 - Atualizado 2026
   * https://www.udemy.com/course/domine-apache-airflow/learn/lecture/53169407#overview
+ 
+## Curso de Databricks Administrator com Terraform
+ * Microsoft Azure Databricks Administration - ETL Workflow: https://www.udemy.com/course/microsoft-azure-databricks-administration-etl-workflow/learn/lecture/35666690#overview
