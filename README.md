@@ -17,3 +17,6 @@
 
 ### Curso de CI/CD com Databricks Asset Bundle
  * https://www.udemy.com/course/cicd-with-databricks-asset-bundles/learn/lecture/49419255#overview
+
+### Terraform 101: The Ultimate Hands-On Guide [Azure Edition]
+ * https://www.udemy.com/course/terraform-101-azure-edition/learn/lecture/46069369#overview
