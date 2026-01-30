@@ -20,3 +20,6 @@
 
 ### Terraform 101: The Ultimate Hands-On Guide [Azure Edition]
  * https://www.udemy.com/course/terraform-101-azure-edition/learn/lecture/46069369#overview
+
+### Terraform com Fabricio Veronez
+ * https://plataforma.devopspro.com.br/courses/af00ffe1-1d2f-4dce-9a19-780e59273907/2/1/11/conteudos?capitulo=11&conteudo=241
