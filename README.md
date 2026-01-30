@@ -9,7 +9,7 @@
   * https://github.com/MathMachado/ai-agents-crash-course
   * https://www.udemy.com/course/ai-agents-crash-course/learn/lecture/52612664#overview
 
-* Formação Completa Apache Airflow 3 - Atualizado 2026
+### Formação Completa Apache Airflow 3 - Atualizado 2026
   * https://www.udemy.com/course/domine-apache-airflow/learn/lecture/53169407#overview
  
 ### Curso de Databricks Administrator com Terraform
