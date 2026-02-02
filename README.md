@@ -23,3 +23,6 @@
 
 ### Terraform com Fabricio Veronez
  * https://plataforma.devopspro.com.br/courses/af00ffe1-1d2f-4dce-9a19-780e59273907/2/1/11/conteudos?capitulo=11&conteudo=241
+
+### Terraform - Do Básico ao Avançado
+ * https://www.udemy.com/course/terraform-do-basico-ao-avancado/learn/lecture/30183184#overview
