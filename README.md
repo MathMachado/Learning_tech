@@ -27,6 +27,9 @@
 ## Terraform - Do Básico ao Avançado
  * https://www.udemy.com/course/terraform-do-basico-ao-avancado/learn/lecture/30183184#overview
    * Explica detalhadamente o funcionamento do Terraform.
+  
+## HashiCorp Certified: Terraform Associate 003 - Hands-On Labs
+ * https://www.udemy.com/course/terraform-hands-on-labs/learn/lecture/29164056#overview
 
 # Docker
  * https://cpqd.neolude.com.br/ClassRoom/172913/Enrollment
