@@ -26,3 +26,6 @@
 
 ### Terraform - Do Básico ao Avançado
  * https://www.udemy.com/course/terraform-do-basico-ao-avancado/learn/lecture/30183184#overview
+
+### Curso de Docker
+ * https://cpqd.neolude.com.br/ClassRoom/172913/Enrollment
