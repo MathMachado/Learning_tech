@@ -1,3 +1,8 @@
+## Extensões do VSCODE Studio para Terraform:
+* Hashicorp Terraform
+* Hashicorp HCL
+
+  
 # 🧱 Blocos de Estrutura e Configuração
 
 * **1. terraform:** Define as configurações do próprio Terraform, como a versão mínima exigida e onde o estado (`state`) será armazenado (ex: local ou no S3 da AWS).
