@@ -1,9 +1,6 @@
 # Repositório Learning_tech
 * Objetivo: mapear os melhores cursos e recursos para aprender Big Data, Engenharia de Dados, Ciência de Dados e AI Engineer.
 
-## Docker
-* Site oficia para instalação do Docker: https://confluence.cpqd.com.br/spaces/TI/pages/60656560/Docker. Depois que instalar o Docker, rodar esse comando para otimizar os recursos do Docker: https://docs.docker.com/engine/install/linux-postinstall/
-
 ## Listagem de cursos
 ### Learn to build agentic AI solutions with Python, OpenAI SDK, AgentBuilder, tools, RAG, and guardrails - in just 4 hours!
   * https://github.com/MathMachado/ai-agents-crash-course
@@ -29,3 +26,4 @@
 
 ### Curso de Docker
  * https://cpqd.neolude.com.br/ClassRoom/172913/Enrollment
+ * Site oficial para instalação do Docker: https://confluence.cpqd.com.br/spaces/TI/pages/60656560/Docker. Depois que instalar o Docker, rodar esse comando para otimizar os recursos do Docker: https://docs.docker.com/engine/install/linux-postinstall/
