@@ -34,3 +34,90 @@
 | Parametrizar o código | `variable` |
 | Renomear algo sem deletar | `moved` |
 
+# Exemplo
+
+Para que este código funcione, ele está dividido logicamente. O Terraform lê todos os arquivos `.tf` na mesma pasta, mas o padrão de mercado é organizar assim:
+
+## 1. `variables.tf` (As Entradas)
+
+Aqui definimos o que pode mudar sem precisarmos editar o código principal.
+
+```hcl
+variable "instance_name" {
+  description = "Nome da tag para a instância"
+  type        = string
+  default     = "Servidor-Projetos-AI"
+}
+
+variable "instance_type" {
+  description = "Tipo da instância (tamanho do hardware)"
+  type        = string
+  default     = "t3.micro"
+}
+
+```
+
+## 2. `main.tf` (A Infraestrutura)
+
+Aqui é onde a mágica acontece. Usamos o `provider` para conectar, o `data` para buscar a imagem correta e o `resource` para criar o servidor.
+
+```hcl
+# 1. Configuração do Terraform e Provider
+terraform {
+  required_version = ">= 1.0.0"
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+# 2. Bloco Data: Busca a AMI mais recente do Ubuntu
+data "aws_ami" "ubuntu" {
+  most_recent = true
+  filter {
+    name   = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
+  }
+  owners = ["099720109477"] # Canonical
+}
+
+# 3. Bloco Locals: Organiza nomes repetitivos
+locals {
+  common_tags = {
+    Project   = "DataScience-Automation"
+    ManagedBy = "Terraform"
+  }
+}
+
+# 4. Bloco Resource: Cria o recurso real
+resource "aws_instance" "web_server" {
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = var.instance_type # Usando a variável
+
+  tags = merge(locals.common_tags, {
+    Name = var.instance_name
+  })
+}
+
+```
+
+## 3. `outputs.tf` (As Saídas)
+
+Útil para você saber o endereço do servidor assim que ele terminar de ser criado.
+
+```hcl
+output "instance_public_ip" {
+  description = "IP público da instância criada"
+  value       = aws_instance.web_server.public_ip
+}
+
+```
+
+---
+
+## Por que essa estrutura é boa?
+
+1. **Flexibilidade:** Se você quiser mudar o nome do servidor, você só altera o valor da `variable` (ou passa via linha de comando), sem tocar no recurso.
+2. **Inteligência:** O bloco `data` garante que você sempre pegue a versão mais nova do Ubuntu disponível na AWS, evitando que seu código fique "viciado" em um ID de imagem antigo.
+3. **Organização:** Usar `locals` permite que você aplique as mesmas tags (como nome do projeto) em dezenas de recursos de uma vez só.
+
