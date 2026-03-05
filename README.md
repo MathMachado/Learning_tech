@@ -9,6 +9,14 @@
 # Apache Airflow
 ## Formação Completa Apache Airflow 3 - Atualizado 2026
   * https://www.udemy.com/course/domine-apache-airflow/learn/lecture/53169407#overview
+## The Complete Hands-On Introduction to Apache Airflow 3
+ * https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/50673071#overview
+ * Ferramentas: install uv e Docker
+
+
+
+
+
 
 # Databricks
 ## Curso de Databricks Administrator com Terraform
